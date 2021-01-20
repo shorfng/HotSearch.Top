@@ -32,7 +32,6 @@ gen
 hs_err_pid*
 
 # ============================ Spring Boot文件 ============================
-README.md
 */target/
 !.mvn/wrapper/maven-wrapper.jar
 

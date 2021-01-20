@@ -13,9 +13,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>top.hotsearch</groupId>
     <artifactId>hotsearch</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>hotsearch</name>
     <description>HotSearch.top project for Spring Boot</description>
+
+
+    <modules>
+        <module>hotsearch-service-email-8080</module>
+        <module>hotsearch-service-common</module>
+        <module>hotsearch-service-dubbo-api</module>
+        <module>hotsearch-service-verify-8081</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
@@ -78,11 +87,11 @@
         </dependency>
 
         <!--热部署-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
-        </dependency>
+        </dependency>-->
 
         <!--引⼊Jaxb，开始-->
         <dependency>
