@@ -2,22 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+    <!-- 父项目信息 -->
     <parent>
         <artifactId>hotsearch</artifactId>
         <groupId>top.hotsearch</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <!-- 本项目信息 -->
     <modelVersion>4.0.0</modelVersion>
     <artifactId>hotsearch-service-email</artifactId>
     <packaging>jar</packaging>
 
+    <!-- 设置编译版本 -->
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
 
     <dependencies>
         <!-- 公共类子项目 -->
@@ -90,6 +91,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
