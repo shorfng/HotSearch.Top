@@ -8,33 +8,19 @@ spring:
   main:
     allow-bean-definition-overriding: true
   profiles:
-    active: dev
-
-  #  datasource:
-  #      driver-class-name: com.mysql.jdbc.Driver
-  #      url: jdbc:mysql://localhost:3306/zzz?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
-  #      username: root
-  #      password: root
-
-  #  jpa:
-  #    database: MySQL
-  #    show-sql: true
-  #    hibernate:
-  #      naming:
-  #        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  #避免将驼峰命名转换为下划线命名
-  #      jdbc.time_zone: UTC
+    active: Dev
 
   #Nacos 配置
   cloud:
     nacos:
       discovery:
         ################ 配置nacos server地址
-        server-addr: localhost:8848
-        #namespace: d80e4457-1263-4482-8715-0bd7f19836e5
+        server-addr: 192.168.31.130:8848
+        namespace: f41de296-29a5-49f3-8fc7-720652f03726 # 命名空间
       config:
-        server-addr: localhost:8848
-        #namespace: d80e4457-1263-4482-8715-0bd7f19836e5 #命名空间
-        group: DEFAULT_GROUP #默认分组就是DEFAULT_GROUP
+        server-addr: 192.168.31.130:8848
+        namespace: f41de296-29a5-49f3-8fc7-720652f03726 # 命名空间
+        group: PROJECT_GROUP # 分组
         dataid: hotsearch-service-email-${spring.profiles.active}.yaml
         file-extension: yaml #扩展名
 

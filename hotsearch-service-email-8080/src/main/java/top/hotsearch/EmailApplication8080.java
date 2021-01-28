@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * Author：蓝田_Loto
  * <p>Date：2021-01-21 0:07</p>
  * <p>PageName：EmailApplication8080.java</p>
- * <p>Function：</p>
+ * <p>Function：发送邮件服务端 - 启动类</p>
  */
 
 @SpringBootApplication
