@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * Author：蓝田_Loto
  * <p>Date：2021-01-21 1:12</p>
  * <p>PageName：VerifyApplication8081.java</p>
- * <p>Function：</p>
+ * <p>Function：验证功能启动类</p>
  */
 
 @SpringBootApplication

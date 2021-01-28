@@ -18,12 +18,12 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/email")
 public class EmailVerifyCodeController {
-    @Reference
-    private EmailService emailService;
+	@Reference
+	private EmailService emailService;
 
-    @RequestMapping(value = "/sendemailverifycode/{email}")
-    public boolean sendEmailVerifyCode(@PathVariable String email) {
-        emailService.sendEmail(email, UUID.randomUUID().toString().substring(0, 6));
-        return true;
-    }
+	@RequestMapping(value = "/sendemailverifycode/{email}")
+	public boolean sendEmailVerifyCode(@PathVariable String email) {
+		emailService.sendEmail("1", email);
+		return true;
+	}
 }

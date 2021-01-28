@@ -16,28 +16,29 @@ import top.hotsearch.service.EmailService;
 
 @Service
 public class EmailServiceImpl implements EmailService {
-    @Autowired(required = true)
-    private JavaMailSender mailSender;
+	@Autowired(required = true)
+	private JavaMailSender mailSender;
 
-    @Value("${spring.mail.from}")
-    private String from;
+	@Value("${spring.mail.from}")
+	private String from;
 
-    @Override
-    public boolean sendEmail(String email, String code) {
-        //创建SimpleMailMessage对象
-        SimpleMailMessage message = new SimpleMailMessage();
+	@Override
+	public boolean sendEmail(String emailType, String email) {
+		//创建SimpleMailMessage对象
+		SimpleMailMessage message = new SimpleMailMessage();
 
-        //邮件发送人
-        message.setFrom(from);
-        //邮件接收人
-        message.setTo(email.split(";"));
-        //邮件主题
-        message.setSubject("【idstaa】springCloud登录注册短信验证码");
-        //邮件内容
-        message.setText("idstaa验证码：" + code);
+		//邮件发送人
+		message.setFrom(from);
+		//邮件接收人
+		message.setTo(email.split(";"));
+		//邮件主题
+		message.setSubject("【idstaa】springCloud登录注册短信验证码");
+		//邮件内容
+		//message.setText("idstaa验证码：" + code);
 
-        //发送邮件
-        mailSender.send(message);
-        return true;
-    }
+		//发送邮件
+		mailSender.send(message);
+		return true;
+	}
+
 }
