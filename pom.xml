@@ -12,18 +12,18 @@
     <!-- 父项目信息 -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>top.hotsearch</groupId>
-    <artifactId>hotsearch</artifactId>
+    <artifactId>HotSearch.Top</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hotsearch</name>
+    <name>HotSearch.Top</name>
     <description>HotSearch.top project for Spring Boot</description>
 
     <!-- 子项目信息-->
     <modules>
-        <module>hotsearch-service-email-8080</module>
-        <module>hotsearch-service-common</module>
-        <module>hotsearch-service-dubbo-api</module>
-        <module>hotsearch-service-verify-8081</module>
+        <module>HotSearch-common</module>
+        <module>HotSearch-api-dubbo</module>
+        <module>HotSearch-service-email-8080</module>
+        <module>HotSearch-service-verify-8081</module>
     </modules>
 
     <!-- 设置编译版本 -->

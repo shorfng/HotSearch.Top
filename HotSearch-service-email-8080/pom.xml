@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <!-- 父项目信息 -->
     <parent>
-        <artifactId>hotsearch</artifactId>
+        <artifactId>HotSearch.Top</artifactId>
         <groupId>top.hotsearch</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <!-- 本项目信息 -->
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>hotsearch-service-email-8080</artifactId>
+    <artifactId>HotSearch-service-email-8080</artifactId>
     <packaging>jar</packaging>
 
     <!-- 设置编译版本 -->
@@ -24,13 +24,13 @@
         <!-- 公共类子项目 -->
         <dependency>
             <groupId>top.hotsearch</groupId>
-            <artifactId>hotsearch-service-common</artifactId>
+            <artifactId>HotSearch-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>top.hotsearch</groupId>
-            <artifactId>hotsearch-service-dubbo-api</artifactId>
+            <artifactId>HotSearch-api-dubbo</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
